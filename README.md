@@ -6,7 +6,7 @@ StoryBoardを利用しない必要最低限のテンプレート。まずはこ�
 ・ディレクトリ構成
 
  NoStoryBoard
-  ├─Application
-  ├─Compornents
-  ├─Frameworks
-  └─UI
+  ├ Application
+  ├ Compornents
+  ├ Frameworks
+  └ UI
