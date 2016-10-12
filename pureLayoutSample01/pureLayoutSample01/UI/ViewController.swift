@@ -14,12 +14,15 @@ class ViewController: UIViewController {
     
     // MARK: - Initializers
     init() {
-        self.searchBar = UISearchBar.newAutoLayoutView()
-        self.label = UILabel.newAutoLayoutView()
-        self.textField = UITextField.newAutoLayoutView()
-        self.imageView = UIImageView()
-//        self.imageView.translatesAutoresizingMaskIntoConstraints = false
-//        self.imageView.contentMode = UIViewContentMode.ScaleAspectFill
+        searchBar = UISearchBar.newAutoLayoutView()
+        label = UILabel.newAutoLayoutView()
+        textField = UITextField.newAutoLayoutView()
+        
+        let image:UIImage = UIImage(named: "sample01.gif")!
+        imageView = UIImageView.newAutoLayoutView()
+        imageView = UIImageView(image:image)
+        imageView.contentMode = UIViewContentMode.ScaleAspectFit
+
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -35,8 +38,8 @@ class ViewController: UIViewController {
         
         configureNavigationBar()
         addSubviews()
-        configureSubviews()
         addConstraints()
+        configureSubviews()
     }
     
     // MARK: - View Setup
@@ -47,19 +50,6 @@ class ViewController: UIViewController {
         view.addSubview(label)
         view.addSubview(textField)
         view.addSubview(imageView)
-    }
-    
-    private func configureSubviews() {
-        searchBar.placeholder = "UISearchBar"
-
-        label.text = "Pure Layout Sample 01"
-
-        textField.placeholder = "UItextField"
-        textField.layer.borderWidth = 1
-        
-        let image:UIImage = UIImage(named: "sample01.gif")!
-        imageView = UIImageView(image:image)
-        
     }
     
     private func addConstraints() {
@@ -73,11 +63,22 @@ class ViewController: UIViewController {
         
         textField.autoPinEdge(.Top, toEdge: .Bottom, ofView: label, withOffset: 10.0)
         textField.autoPinEdgeToSuperviewEdge(.Left, withInset: 10.0)
-        textField.autoPinEdgeToSuperviewEdge(.Right, withInset: 10.0)
 
+        imageView.autoPinEdge(.Top, toEdge: .Bottom, ofView: textField, withOffset: 10.0)
+        imageView.autoPinEdgeToSuperviewEdge(.Left, withInset: 10.0)
+        imageView.autoPinEdgeToSuperviewEdge(.Right, withInset: 10.0)
+
+        //imageView.autoSetDimensionsToSize(CGSize(width: 192, height: 192))
+    }
+    
+    private func configureSubviews() {
+        searchBar.placeholder = "UISearchBar"
         
-        imageView.autoSetDimensionsToSize(CGSizeMake(192, 192))
-        //imageView.autoPinEdgeToSuperviewEdge(.Left, withInset: 20.0)
+        label.text = "Pure Layout Sample 01"
+        
+        textField.placeholder = "UItextField"
+        textField.layer.borderWidth = 1
+        
     }
     
 }
