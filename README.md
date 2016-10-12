@@ -21,9 +21,9 @@ PureLayoutのサンプル（基本的なView）
 - UISearchBar
 - UILabel
 - UITextField
-- UIImageView（調査中...）
+- UIImageView
 
-![サンプル](http://i.imgur.com/fKyu0Aw.png "サンプル")
+![サンプル](http://i.imgur.com/MR8S9oH.png "サンプル")
 
 ## pureLayoutSample02
 PureLayoutのサンプル（TableView）
