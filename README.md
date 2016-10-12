@@ -18,6 +18,7 @@ StoryBoardを利用しない必要最低限のテンプレート。まずはこ�
 
 ## pureLayoutSample01
 PureLayoutのサンプル（基本的なView）
+git clone後に「make update」してください。
 - UISearchBar
 - UILabel
 - UITextField
