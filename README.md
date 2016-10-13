@@ -17,13 +17,13 @@ StoryBoardを利用しない必要最低限のテンプレート。まずはこ�
 </pre>
 
 ## pureLayoutSample01
-PureLayoutのサンプル（基本的なView）
+PureLayoutのサンプル（基本的なView）。git clone後に「make update」が必要です。
 - UISearchBar
 - UILabel
 - UITextField
-- UIImageView（調査中...）
+- UIImageView
 
-![サンプル](http://i.imgur.com/fKyu0Aw.png "サンプル")
+![サンプル](http://i.imgur.com/MR8S9oH.png "サンプル")
 
 ## pureLayoutSample02
 PureLayoutのサンプル（TableView）
