@@ -27,6 +27,7 @@ PureLayoutのサンプル（基本的なView）。git clone後に「make update�
 
 ## pureLayoutSample02
 PureLayoutのサンプル（TableView）
-- UITableView（調査中...）
-- UITableViewCell（調査中...）
+- UITableView
+- UITableViewCell
 
+![サンプル](http://i.imgur.com/6WWDlLR.png "サンプル")
