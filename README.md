@@ -16,6 +16,7 @@ StoryBoardを利用しない必要最低限のテンプレート。まずはこ�
   └─ UI
 </pre>
 
+
 ## pureLayoutSample01
 PureLayoutのサンプル（基本的なView）。git clone後に「make update」が必要です。
 - UISearchBar
@@ -25,9 +26,18 @@ PureLayoutのサンプル（基本的なView）。git clone後に「make update�
 
 ![サンプル](http://i.imgur.com/MR8S9oH.png "サンプル")
 
+
 ## pureLayoutSample02
 PureLayoutのサンプル（TableView）
 - UITableView
 - UITableViewCell
 
 ![サンプル](http://i.imgur.com/6WWDlLR.png "サンプル")
+
+
+## pureLayoutSample03
+PureLayoutのサンプル（CollectionView）
+- UICollectionView
+- UICollectionViewCell
+
+![サンプル](http://i.imgur.com/TRPnPGp.png "サンプル")
