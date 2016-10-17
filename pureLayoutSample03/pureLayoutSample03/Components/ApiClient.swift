@@ -52,8 +52,7 @@ extension String {
         let formatter = NSDateFormatter()
         formatter.dateFormat = "yyyy/MM/dd HH:mm:ss"
         let date: NSDate? = formatter.dateFromString(stringTime)
-        //let unixDate: NSTimeInterval? = date?.timeIntervalSince1970
-        let pastSec = date!.timeIntervalSinceDate(NSDate())
+        let pastSec: NSTimeInterval = date!.timeIntervalSinceDate(NSDate())
         if pastSec < 0 {
             return "終了"
         }
@@ -65,7 +64,7 @@ extension String {
         case 3600..<3600*24:
             return String(Int(pastSec/3600)) + "時間"
         default:
-            return String(Int(pastSec/3600*24)) + "日"
+            return String(Int(pastSec/(3600*24))) + "日"
         }
         
     }
