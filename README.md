@@ -40,4 +40,4 @@ PureLayoutのサンプル（CollectionView）
 - UICollectionView
 - UICollectionViewCell
 
-![サンプル](http://i.imgur.com/TRPnPGp.png "サンプル")
+![サンプル](http://i.imgur.com/pPbO28T.png "サンプル")
