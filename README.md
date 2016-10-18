@@ -41,3 +41,10 @@ PureLayoutのサンプル（CollectionView）
 - UICollectionViewCell
 
 ![サンプル](http://i.imgur.com/pPbO28T.png "サンプル")
+
+
+## pureLayoutSample04
+PureLayoutのサンプル（UITabBarController）
+- UITabBarController
+
+![サンプル](http://i.imgur.com/R1MiDsa.png "サンプル")
