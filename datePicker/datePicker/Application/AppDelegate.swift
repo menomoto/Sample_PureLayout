@@ -8,7 +8,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let viewController = ViewController()
+        let viewController = DatePickerViewController()
         window?.rootViewController = viewController
         window?.makeKeyAndVisible()
         

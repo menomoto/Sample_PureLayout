@@ -11,7 +11,7 @@
 		BA4D5ACF1DAD060000EBE01A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA4D5AC71DAD060000EBE01A /* Assets.xcassets */; };
 		BA4D5AD01DAD060000EBE01A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA4D5AC81DAD060000EBE01A /* LaunchScreen.storyboard */; };
 		BA4D5AD11DAD060000EBE01A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA4D5ACA1DAD060000EBE01A /* Info.plist */; };
-		BA4D5AD21DAD060000EBE01A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4D5ACD1DAD060000EBE01A /* ViewController.swift */; };
+		BA4D5AD21DAD060000EBE01A /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4D5ACD1DAD060000EBE01A /* DatePickerViewController.swift */; };
 		BA4D5AD41DAD062E00EBE01A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4D5AD31DAD062E00EBE01A /* main.swift */; };
 		BA4D5ADA1DAD088400EBE01A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BA4D5AD61DAD088400EBE01A /* Info.plist */; };
 		BA4D5ADB1DAD088400EBE01A /* datePickerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA4D5AD71DAD088400EBE01A /* datePickerTests.swift */; };
@@ -36,7 +36,7 @@
 		BA4D5AC71DAD060000EBE01A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA4D5AC91DAD060000EBE01A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA4D5ACA1DAD060000EBE01A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA4D5ACD1DAD060000EBE01A /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA4D5ACD1DAD060000EBE01A /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 		BA4D5AD31DAD062E00EBE01A /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		BA4D5AD61DAD088400EBE01A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BA4D5AD71DAD088400EBE01A /* datePickerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = datePickerTests.swift; sourceTree = "<group>"; };
@@ -115,7 +115,7 @@
 		BA4D5ACC1DAD060000EBE01A /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				BA4D5ACD1DAD060000EBE01A /* ViewController.swift */,
+				BA4D5ACD1DAD060000EBE01A /* DatePickerViewController.swift */,
 				BA4D5AEA1DAD197500EBE01A /* sample01.gif */,
 			);
 			path = UI;
@@ -262,7 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA4D5AD21DAD060000EBE01A /* ViewController.swift in Sources */,
+				BA4D5AD21DAD060000EBE01A /* DatePickerViewController.swift in Sources */,
 				BA4D5ACE1DAD060000EBE01A /* AppDelegate.swift in Sources */,
 				BA4D5AD41DAD062E00EBE01A /* main.swift in Sources */,
 			);
