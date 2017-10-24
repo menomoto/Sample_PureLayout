@@ -4,16 +4,34 @@ import UIKit
 
 if NSClassFromString("XCTestCase") != nil {
     UIApplicationMain(
-        Process.argc,
-        Process.unsafeArgv,
-        NSStringFromClass(UIApplication),
-        NSStringFromClass(TestingAppDelegate)
+        CommandLine.argc,
+        UnsafeMutableRawPointer(CommandLine.unsafeArgv)
+            .bindMemory(
+                to: UnsafeMutablePointer<Int8>.self,
+                capacity: Int(CommandLine.argc)),
+        NSStringFromClass(UIApplication.self),
+        NSStringFromClass(TestingAppDelegate.self)
     )
+//    UIApplicationMain(
+//        Process.argc,
+//        Process.unsafeArgv,
+//        NSStringFromClass(UIApplication),
+//        NSStringFromClass(TestingAppDelegate)
+//    )
 } else {
     UIApplicationMain(
-        Process.argc,
-        Process.unsafeArgv,
-        NSStringFromClass(UIApplication),
-        NSStringFromClass(AppDelegate)
+        CommandLine.argc,
+        UnsafeMutableRawPointer(CommandLine.unsafeArgv)
+            .bindMemory(
+                to: UnsafeMutablePointer<Int8>.self,
+                capacity: Int(CommandLine.argc)),
+        NSStringFromClass(UIApplication.self),
+        NSStringFromClass(AppDelegate.self)
     )
+//    UIApplicationMain(
+//        Process.argc,
+//        Process.unsafeArgv,
+//        NSStringFromClass(UIApplication),
+//        NSStringFromClass(AppDelegate)
+//    )
 }

@@ -87,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				BA4D5AC51DAD060000EBE01A /* Application */,
-				BA4D5ACB1DAD060000EBE01A /* Components */,
 				BA4D5ACC1DAD060000EBE01A /* UI */,
 			);
 			path = pureLayoutSample01;
@@ -97,8 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				BA4D5AD51DAD088400EBE01A /* Application */,
-				BA4D5AD81DAD088400EBE01A /* Components */,
-				BA4D5AD91DAD088400EBE01A /* UI */,
 			);
 			path = pureLayoutSample01Tests;
 			sourceTree = "<group>";
@@ -113,13 +110,6 @@
 				BA4D5AD31DAD062E00EBE01A /* main.swift */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		BA4D5ACB1DAD060000EBE01A /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		BA4D5ACC1DAD060000EBE01A /* UI */ = {
@@ -138,20 +128,6 @@
 				BA4D5AD71DAD088400EBE01A /* pureLayoutSample01Tests.swift */,
 			);
 			path = Application;
-			sourceTree = "<group>";
-		};
-		BA4D5AD81DAD088400EBE01A /* Components */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Components;
-			sourceTree = "<group>";
-		};
-		BA4D5AD91DAD088400EBE01A /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UI;
 			sourceTree = "<group>";
 		};
 		BA4D5ADC1DAD09F700EBE01A /* Frameworks */ = {
@@ -425,7 +401,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.menomoto.pureLayoutSample01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -441,7 +417,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.menomoto.pureLayoutSample01;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 2.3;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

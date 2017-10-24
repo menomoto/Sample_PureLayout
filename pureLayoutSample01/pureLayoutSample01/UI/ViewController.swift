@@ -14,15 +14,14 @@ class ViewController: UIViewController {
     
     // MARK: - Initializers
     init() {
-        searchBar = UISearchBar.newAutoLayoutView()
-        label = UILabel.newAutoLayoutView()
-        textField = UITextField.newAutoLayoutView()
+        searchBar = UISearchBar.newAutoLayout()
+        label = UILabel.newAutoLayout()
+        textField = UITextField.newAutoLayout()
         
         let image:UIImage = UIImage(named: "sample01.gif")!
-        imageView = UIImageView.newAutoLayoutView()
+        imageView = UIImageView.newAutoLayout()
         imageView = UIImageView(image:image)
-        imageView.contentMode = UIViewContentMode.ScaleAspectFit
-
+        imageView.contentMode = .scaleAspectFit
         
         super.init(nibName: nil, bundle: nil)
     }
@@ -34,7 +33,7 @@ class ViewController: UIViewController {
     // MARK: - View Controller Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.whiteColor()
+        view.backgroundColor = .white
         
         configureNavigationBar()
         addSubviews()
@@ -53,20 +52,20 @@ class ViewController: UIViewController {
     }
     
     private func addConstraints() {
-        searchBar.autoPinToTopLayoutGuideOfViewController(self, withInset: 0)
-        searchBar.autoPinEdgeToSuperviewEdge(.Left)
-        searchBar.autoPinEdgeToSuperviewEdge(.Right)
+        searchBar.autoPin(toTopLayoutGuideOf: self, withInset: 0)
+        searchBar.autoPinEdge(toSuperviewEdge: .left)
+        searchBar.autoPinEdge(toSuperviewEdge: .right)
 
-        label.autoPinEdge(.Top, toEdge: .Bottom, ofView: searchBar, withOffset: 10.0)
-        label.autoPinEdgeToSuperviewEdge(.Left, withInset: 10.0)
-        label.autoPinEdgeToSuperviewEdge(.Right, withInset: 10.0)
+        label.autoPinEdge(.top, to: .bottom, of: searchBar, withOffset: 10.0)
+        label.autoPinEdge(toSuperviewEdge: .left, withInset: 10.0)
+        label.autoPinEdge(toSuperviewEdge: .right, withInset: 10.0)
         
-        textField.autoPinEdge(.Top, toEdge: .Bottom, ofView: label, withOffset: 10.0)
-        textField.autoPinEdgeToSuperviewEdge(.Left, withInset: 10.0)
+        textField.autoPinEdge(.top, to: .bottom, of: label, withOffset: 10.0)
+        textField.autoPinEdge(toSuperviewEdge: .left, withInset: 10.0)
 
-        imageView.autoPinEdge(.Top, toEdge: .Bottom, ofView: textField, withOffset: 10.0)
-        imageView.autoPinEdgeToSuperviewEdge(.Left, withInset: 10.0)
-        imageView.autoPinEdgeToSuperviewEdge(.Right, withInset: 10.0)
+        imageView.autoPinEdge(.top, to: .bottom, of: textField, withOffset: 10.0)
+        imageView.autoPinEdge(toSuperviewEdge: .left, withInset: 10.0)
+        imageView.autoPinEdge(toSuperviewEdge: .right, withInset: 10.0)
 
         //imageView.autoSetDimensionsToSize(CGSize(width: 192, height: 192))
     }
