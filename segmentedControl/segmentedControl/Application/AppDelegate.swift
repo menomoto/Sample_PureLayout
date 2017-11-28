@@ -8,8 +8,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let viewController = DatePickerViewController()
-        window?.rootViewController = viewController
+        let viewController = SegmentedControlViewController()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         
         return true
